@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="/techhelpdesk/styles.css" type="text/css" />
+<script src="/techhelpdesk/tech/formvalidate.js"></script>
+</head>
+
+<body>
+<div id="sidebar">
+  <div>
+    <p class="title">New Technician</p>
+  </div>
+</div>
+<div id="main">
+<h3>Sign Up New Technician</h3>
+	<fieldset>
+		<legend>Registration Form</legend>
+		<form name="regform" onSubmit="return formValidation();" action="add_tech.php" method="post">
+			<p><label>Name:</label>
+			<input type="text" name="name" size="45" required/><br/></p>		
+			<p><label>Password:</label>
+			<input type="text" name="password" size="20" required/><br/></p>
+			<p><label>Email:</label>
+			<input type="text" name="email" size="45" required/><br/></p>
+			<p><label>Phone:</label>
+			<input type="text" name="phone" size="20" required/><br/></p>
+			<p><label>Field of Expertise:</label><br/>
+			<input type="radio" name="field" value="Computer"/>Computer<br/>
+			<input type="radio" name="field" value="Electrical"/>Electrical<br/>
+			<input type="radio" name="field" value="Automobile"/>Automobile</p>
+			<p><input type="submit" name="send" value="Send" />
+			<input type="reset" name="cancel" value="Cancel" /></p>
+		</form>
+	
+	</fieldset>
+	<br id="endmain" />
+	</div>
+</body>
+
+</html>

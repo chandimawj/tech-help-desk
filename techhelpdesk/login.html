@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="/techHelpDesk/styles.css" type="text/css" />
+</head>
+
+<body>
+<div id="sidebar">
+  <div>
+    <p class="title"><a href="login.html">Log In</a></p>
+  </div>
+</div>
+	<div id="main">
+		<fieldset>
+			<legend>Basic User</legend>
+				<form action="/techhelpdesk/user/user_login.php" method="post">
+					<p><label>Email:</label>
+					<input type="text" name="email" required/><br /></p>		
+					<p><label>Password:</label>
+					<input type="password" name="password" required/><br /></p>
+					<p><input type="submit" name="send" value="Log In" />
+					<input type="reset" name="cancel" value="Cancel" /></p>
+				</form>
+				<h4><a href="/techhelpdesk/user/add_user.html">I'm a New User</a></h4>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend>Technician</legend>
+				<form action="/techhelpdesk/tech/tech_login.php" method="post">
+					<p><label>Email:</label>
+					<input type="text" name="email" required/><br /></p>		
+					<p><label>Password:</label>
+					<input type="password" name="password" required/><br /></p>
+					<p><input type="submit" name="send" value="Log In" />
+					<input type="reset" name="cancel" value="Cancel" /></p>
+				</form>
+				<h4><a href="/techhelpdesk/tech/add_tech.html">I'm a New Technician Here</a></h4>
+		</fieldset>
+		<br/>
+		<fieldset>
+			<legend>Administrator</legend>
+				<form action="/techhelpdesk/admin/admin_login.php" method="post">
+					<p><label>Password:</label>
+					<input type="password" name="password" required/><br /></p>
+					<p><input type="submit" name="send" value="Log in" />
+					<input type="reset" name="cancel" value="Cancel" /></p>
+				</form>
+		</fieldset>
+		<br id="endmain" />
+	</div>
+</body>
+
+</html>

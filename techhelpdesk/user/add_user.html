@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="/techhelpdesk/styles.css" type="text/css" />
+<script src="/techhelpdesk/user/formvalidate.js"></script>
+</head>
+
+<body onload="document.regform.name.focus();">
+<div id="sidebar">
+  <div>
+    <p class="title">New User</p>
+  </div>
+</div>
+<div id="main">
+<h3>Sign Up New User</h3>
+	<fieldset>
+		<legend>Registration Form</legend>
+		<form name="regform" onSubmit="return formValidation();" action="add_user.php" method="post">
+			<p><label>Name:</label>
+			<input type="text" name="name" size="45" required/><br/></p>		
+			<p><label>Password:</label>
+			<input type="password" name="password" size="10" required/><br/></p>
+			<p><label>Email:</label>
+			<input type="text" name="email" size="45" required/><br/></p>
+			<p><label>Phone:</label>
+			<input type="text" name="phone" size="20" required/><br/></p>
+			<p><label>Address:</label>
+			<textarea name="address" rows="5" cols="50" required/></textarea><br/></p>
+			<p><input type="submit" name="send" value="Send"/>
+			<input type="reset" name="cancel" value="Cancel"/></p>
+		</form>
+	
+	</fieldset>
+	<br id="endmain" />
+</div>
+</body>
+
+</html>
